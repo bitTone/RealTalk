@@ -147,7 +147,7 @@
                 android:layout_below="@+id/lbl_page_user_interests_sub" />
 
             <TextView
-                android:id="@+id/lbl_page_interests"
+                android:id="@+id/lbl_page_user_interests"
                 style="@style/Label.UserDetailContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -5,4 +5,9 @@ package com.tj.realtalk.ProfilePage;
  */
 
 public class ProfilePagePresenter {
+
+
+
+
+
 }
