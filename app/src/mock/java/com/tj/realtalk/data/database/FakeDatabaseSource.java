@@ -1,4 +1,4 @@
-package com.tj.realtalk.database;
+package com.tj.realtalk.data.database;
 
 /**
  * Created by tj on 7/9/17.
@@ -6,8 +6,6 @@ package com.tj.realtalk.database;
 
 
 import com.tj.realtalk.GenericTestData;
-import com.tj.realtalk.data.database.DatabaseSource;
-import com.tj.realtalk.data.database.Profile;
 
 import io.reactivex.Completable;
 import io.reactivex.Maybe;

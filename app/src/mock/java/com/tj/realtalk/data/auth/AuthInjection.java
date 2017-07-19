@@ -1,4 +1,4 @@
-package com.tj.realtalk.auth;
+package com.tj.realtalk.data.auth;
 
 
 import com.tj.realtalk.data.Auth.AuthSource;

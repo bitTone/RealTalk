@@ -1,4 +1,4 @@
-package com.tj.realtalk.auth;
+package com.tj.realtalk.data.auth;
 
 
 

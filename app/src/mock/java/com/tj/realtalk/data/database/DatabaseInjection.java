@@ -1,7 +1,5 @@
-package com.tj.realtalk.database;
+package com.tj.realtalk.data.database;
 
-
-import com.tj.realtalk.data.database.DatabaseSource;
 
 /**
  * Created by tj on 7/9/17.

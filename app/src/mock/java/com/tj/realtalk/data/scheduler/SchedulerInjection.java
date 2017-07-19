@@ -1,4 +1,4 @@
-package com.tj.realtalk.scheduler;
+package com.tj.realtalk.data.scheduler;
 
 import com.tj.realtalk.util.BaseSchedulerProvider;
 import com.tj.realtalk.util.ImmediateSchedulerProvider;
