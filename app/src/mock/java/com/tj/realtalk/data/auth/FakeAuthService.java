@@ -2,7 +2,6 @@ package com.tj.realtalk.data.auth;
 
 
 
-import com.tj.realtalk.GenericTestData;
 import com.tj.realtalk.data.Auth.AuthSource;
 import com.tj.realtalk.data.Auth.Credentials;
 import com.tj.realtalk.data.Auth.User;
@@ -15,6 +14,12 @@ import io.reactivex.Maybe;
  */
 
 public class FakeAuthService implements AuthSource {
+
+    private static final User fakeUser =
+            new User(
+                    "email@example.com",
+                    "someId"
+            );
 
     boolean returnFailure = false;
 
@@ -56,7 +61,7 @@ public class FakeAuthService implements AuthSource {
         if (returnFailure){
             Maybe.error(new Exception());
         }
-        return Maybe.just(GenericTestData.getUser());
+        return Maybe.just(fakeUser);
     }
 
     @Override

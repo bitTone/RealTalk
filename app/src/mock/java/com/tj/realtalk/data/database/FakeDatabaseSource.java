@@ -5,8 +5,6 @@ package com.tj.realtalk.data.database;
  */
 
 
-import com.tj.realtalk.GenericTestData;
-
 import io.reactivex.Completable;
 import io.reactivex.Maybe;
 
@@ -14,6 +12,16 @@ import io.reactivex.Maybe;
 public class FakeDatabaseSource implements DatabaseSource {
     boolean returnFailure = false;
     boolean returnEmpty = false;
+
+    private static final Profile fakeProfile =
+            new Profile(
+                    "",
+                    "",
+                    "someId",
+                    "email@example.com",
+                    "someUrl",
+                    "Derp"
+            );
 
     @Override
     public void setReturnEmpty(boolean returnEmpty) {
@@ -48,7 +56,7 @@ public class FakeDatabaseSource implements DatabaseSource {
         } else if (returnEmpty) {
             return Maybe.empty();
         }
-        return Maybe.just(GenericTestData.getProfile());
+        return Maybe.just(fakeProfile);
     }
 
     @Override

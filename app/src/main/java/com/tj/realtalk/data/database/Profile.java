@@ -2,6 +2,8 @@ package com.tj.realtalk.data.database;
 
 /**
  * Created by tj on 7/8/17.
+ *
+ * Basic User Profile
  */
 
 public class Profile {

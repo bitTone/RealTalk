@@ -1,7 +1,7 @@
 <resources>
 
     <!-- using NoActionBar Theme for backwards compatibility-->
-    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar" />
     <!--App Theme in the manifest-->
     <style name="AppTheme" parent="AppTheme.Base">
 
@@ -16,5 +16,9 @@
         <!--Roboto font-->
         <item name="android:fontFamily">sans-serif</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

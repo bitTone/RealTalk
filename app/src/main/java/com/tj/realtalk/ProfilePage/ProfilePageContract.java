@@ -34,11 +34,11 @@ public interface ProfilePageContract {
 
         void setDefaultProfilePhoto ();
 
-        //void startPhotoGalleryActivity();
+        void startPhotoGalleryActivity();
 
-        //void startProfileDetailActivity();
+        void startProfileDetailActivity();
 
-        //void startProfileSettingsActivity();
+        void startProfileSettingsActivity();
 
         void showLogoutSnackbar ();
 

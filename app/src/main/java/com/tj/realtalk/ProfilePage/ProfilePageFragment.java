@@ -177,6 +177,20 @@ public class ProfilePageFragment extends Fragment implements ProfilePageContract
                 });
     }
 
+    @Override
+    public void startPhotoGalleryActivity() {
+
+    }
+
+    @Override
+    public void startProfileDetailActivity() {
+
+    }
+
+    @Override
+    public void startProfileSettingsActivity() {
+
+    }
 
 
     @Override

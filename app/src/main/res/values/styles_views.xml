@@ -26,6 +26,40 @@
         <item name="android:textColor">@color/colorWhite</item>
     </style>
 
+    <style name="UserDetailHeader">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+
+    <style name="UserDetailHeader.Detail">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">.86</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="Label.CardHeader" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Label.CardSub" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+
     <style name="Label.CredentialHeader">
         <item name="android:layout_marginBottom">32dp</item>
         <item name="android:textSize">34sp</item>
@@ -105,6 +139,17 @@
         <item name="android:paddingRight">16sp</item>
     </style>
 
+    <style name="Button.Settings" parent="android:Widget.Button">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
     <!-- *********************** Others  *********************** -->
     <style name="DividerAccent">
         <item name="android:background">@drawable/horizontal_divider_accent</item>
@@ -113,6 +158,15 @@
     <style name="DividerAccent.UserDetail">
         <item name="android:layout_marginTop">2dp</item>
         <item name="android:layout_marginBottom">2dp</item>
+    </style>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
 </resources>
