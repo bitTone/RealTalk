@@ -4,14 +4,9 @@
     android:id="@+id/activity_login_account"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.tj.realtalk.Login.LoginActivity">
 
-    <FrameLayout
-        android:id="@+id/cont_login_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </FrameLayout>
 
 </RelativeLayout>
 

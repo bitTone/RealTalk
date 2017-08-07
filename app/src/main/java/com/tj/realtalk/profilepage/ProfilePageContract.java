@@ -1,4 +1,4 @@
-package com.tj.realtalk.ProfilePage;
+package com.tj.realtalk.profilepage;
 
 import com.tj.realtalk.BasePresenter;
 import com.tj.realtalk.BaseView;
@@ -6,12 +6,6 @@ import com.tj.realtalk.BaseView;
 /**
  * Created by tj on 6/27/17.
  */
-
-
-import com.tj.realtalk.BasePresenter;
-import com.tj.realtalk.BaseView;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 
 /**
  * Created by TJ on 7/12/2017.

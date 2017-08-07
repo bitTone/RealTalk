@@ -6,7 +6,7 @@ import android.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by Ryan on 11/03/2017.
+ * Created by TJ on 6/03/2017.
  */
 
 public class ActivityUtils extends AppCompatActivity {

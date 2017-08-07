@@ -14,9 +14,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tj.realtalk.ProfilePage.ProfilePageActivity;
+import com.tj.realtalk.profilepage.ProfilePageActivity;
 import com.tj.realtalk.R;
-import com.tj.realtalk.createAccount.createAccountActivity;
+import com.tj.realtalk.createAccount.CreateAccountActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -144,7 +144,7 @@ public class LoginactivityFragment extends Fragment {
         @Override
         public void startCreateAccountActivity() {
             presenter.unsubscribe();
-            Intent i = new Intent(getActivity(), createAccountActivity.class);
+            Intent i = new Intent(getActivity(), CreateAccountActivity.class);
             startActivity(i);
         }
 

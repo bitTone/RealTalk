@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
-    tools:context="com.tj.realtalk.ProfilePage.ProfilePageActivity">
+    tools:context="com.tj.realtalk.profilepage.ProfilePageActivity">
 
     <LinearLayout
         android:id="@+id/cont_profile_page_content"
@@ -78,6 +78,19 @@
                 android:layout_toRightOf="@id/imb_page_thumbnail"
                 tools:text="tonyjones34@gmail.com" />
 
+            <ProgressBar
+                android:id="@+id/pro_profile_page_thumbnail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="72dp"
+                android:layout_marginBottom="64dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:visibility="visible"
+                />
+
 
         </RelativeLayout>
 
@@ -117,6 +130,15 @@
                 tools:text="@string/user_bio_example"
                 android:ellipsize="end"
                 />
+            <ProgressBar
+                android:id="@+id/pro_profile_page_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_bio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorAccent" />
 
 
         </RelativeLayout>
@@ -129,7 +151,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            android:layout_weight="1">
+            android:layout_weight="3">
 
             <TextView
                 android:id="@+id/lbl_page_user_interests_sub"
@@ -143,7 +165,7 @@
                 android:id="@+id/div_interests"
                 style="@style/DividerAccent.UserDetail"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="15dp"
                 android:layout_below="@+id/lbl_page_user_interests_sub" />
 
             <TextView
@@ -155,6 +177,15 @@
                 android:background="@drawable/user_detail_background"
                 android:ellipsize="end"
                 tools:text="@string/user_interests_example" />
+            <ProgressBar
+                android:id="@+id/pro_profile_page_interests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div_interests"
+                android:layout_marginTop="16dp"
+                android:indeterminate="true"
+                android:layout_centerHorizontal="true"
+                android:indeterminateTint="@color/colorAccent" />
 
         </RelativeLayout>
 

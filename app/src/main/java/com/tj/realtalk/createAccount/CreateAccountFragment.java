@@ -4,20 +4,21 @@ package com.tj.realtalk.createAccount;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.StringRes;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tj.realtalk.Login.LoginActivity;
-import com.tj.realtalk.ProfilePage.ProfilePageActivity;
+import com.tj.realtalk.profilepage.ProfilePageActivity;
 import com.tj.realtalk.R;
-import com.tj.realtalk.data.auth.AuthInjection;
+import com.tj.realtalk.data.Auth.AuthInjection;
 import com.tj.realtalk.data.database.DatabaseInjection;
 import com.tj.realtalk.data.scheduler.SchedulerInjection;
 
@@ -32,7 +33,7 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
     private Button createAccount;
     private TextView emailLabel, passwordLabel, confirmLabel, nameLabel;
     private EditText emailInput, passwordInput, confirmInput, nameInput;
-    //private ProgressBar progressBar;
+    private ProgressBar progressBar;
     private View contentContainer;
 
     private CreateAccountContract.Presenter presenter;
@@ -68,9 +69,9 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_create_account, container, false);
+        View v = inflater.inflate(R.layout.fragment_create_account_fragment, container, false);
 
-        //progressBar = (ProgressBar) v.findViewById(R.id.pro_create_account_loading);
+        progressBar = (ProgressBar) v.findViewById(R.id.pro_create_account_loading);
 
         contentContainer = v.findViewById(R.id.cont_create_account_content);
 
@@ -105,6 +106,8 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
 
     @Override
     public void makeToast(String message) {
+        Toast.makeText(getActivity().getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+
 
     }
 
@@ -144,11 +147,11 @@ public class CreateAccountFragment extends Fragment implements CreateAccountCont
     @Override
     public void showProgressIndicator(boolean show) {
         if (show){
-            //   progressBar.setVisibility(View.VISIBLE);
-            //   contentContainer.setVisibility(View.INVISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
+            contentContainer.setVisibility(View.INVISIBLE);
         } else {
-            //   progressBar.setVisibility(View.INVISIBLE);
-            //   contentContainer.setVisibility(View.VISIBLE);
+             progressBar.setVisibility(View.INVISIBLE);
+            contentContainer.setVisibility(View.VISIBLE);
         }
     }
 

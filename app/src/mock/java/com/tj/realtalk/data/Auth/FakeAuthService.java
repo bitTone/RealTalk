@@ -1,10 +1,6 @@
-package com.tj.realtalk.data.auth;
+package com.tj.realtalk.data.Auth;
 
 
-
-import com.tj.realtalk.data.Auth.AuthSource;
-import com.tj.realtalk.data.Auth.Credentials;
-import com.tj.realtalk.data.Auth.User;
 
 import io.reactivex.Completable;
 import io.reactivex.Maybe;

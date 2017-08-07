@@ -3,7 +3,6 @@
     package="com.tj.realtalk">
 
     <application
-        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,8 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".createAccount.createAccountActivity" />
-        <activity android:name=".ProfilePage.ProfilePageActivity" />
+        <activity android:name=".createAccount.CreateAccountActivity" />
+        <activity android:name=".profilepage.ProfilePageActivity" />
+        <activity android:name=".photogallery.PhotoGalleryActivity" />
+        <activity android:name=".photodetail.PhotoDetailActivity" />
+        <activity android:name=".profiledetail.ProfileDetailActivity" />
+        <activity android:name=".profilesettings.ProfileSettingsActivity"/>
+
     </application>
 
 </manifest>

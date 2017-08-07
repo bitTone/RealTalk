@@ -12,6 +12,10 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
+    <style name="InputField.Credential.Name">
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
     <style name="InputField.Credential.Email">
         <item name="android:inputType">textEmailAddress</item>
     </style>

@@ -1,7 +1,5 @@
-package com.tj.realtalk.data.auth;
+package com.tj.realtalk.data.Auth;
 
-
-import com.tj.realtalk.data.Auth.AuthSource;
 
 /**
  * Created by tj on 7/9/17.

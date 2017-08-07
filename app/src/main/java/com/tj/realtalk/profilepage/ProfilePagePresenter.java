@@ -1,4 +1,4 @@
-package com.tj.realtalk.ProfilePage;
+package com.tj.realtalk.profilepage;
 
 import com.tj.realtalk.R;
 import com.tj.realtalk.data.Auth.AuthSource;
